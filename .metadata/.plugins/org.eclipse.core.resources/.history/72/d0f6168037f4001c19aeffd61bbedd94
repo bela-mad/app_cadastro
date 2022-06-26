@@ -1,0 +1,15 @@
+package br.com.app_cadastro.domain.vo.v1;
+
+import java.io.Serializable;
+
+public class UploadFileResponseVO implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	private String fileName;
+	private String fileDownloadUri;
+	private String fileType;
+	private long size;
+	
+	
+}

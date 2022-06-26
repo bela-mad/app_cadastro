@@ -1,0 +1,58 @@
+package br.com.app_cadastro.adapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.app_cadastro.domain.entity.Pessoa;
+import br.com.app_cadastro.domain.vo.v1.PessoaVO;
+
+public class DozerConverterTest {
+
+	//MOCK = criar um objeto com a informação que vai ser testada
+	
+	private Pessoa mockEntity(Long numero) {
+		
+		Pessoa pessoa = new Pessoa();
+		pessoa.setId(0l);		
+		pessoa.setNome("Nome teste" + numero);
+		pessoa.setSobrenome("Sobrenome teste" + numero);
+		pessoa.setNomeSocial("NomeSocial teste" + numero);
+		pessoa.setEmail("Email teste" + numero);
+		
+		return pessoa;
+	}
+	
+	private List<Pessoa> mockEntityList(Long numero) {
+		
+		List <Pessoa> pessoas = new ArrayList<>();
+		
+		for(Long i=0l;i<5;i++) {
+			pessoas.add(mockEntity(i));
+		}
+		return pessoas;
+	}
+	
+	
+	private PessoaVO mockEntityVO(Long numero) {
+		
+		PessoaVO pessoa = new PessoaVO();
+		pessoa.setKey(0l);		
+		pessoa.setNome("Nome teste" + numero);
+		pessoa.setSobrenome("Sobrenome teste" + numero);
+		pessoa.setNomeSocial("NomeSocial teste" + numero);
+		pessoa.setEmail("Email teste" + numero);
+		
+		return pessoa;
+	}
+	
+	private List<Pessoa> mockEntityList(Long numero) {
+		
+		List <Pessoa> pessoas = new ArrayList<>();
+		
+		for(Long i=0l;i<5;i++) {
+			pessoas.add(mockEntity(i));
+		}
+		return pessoas;
+	}
+	
+}

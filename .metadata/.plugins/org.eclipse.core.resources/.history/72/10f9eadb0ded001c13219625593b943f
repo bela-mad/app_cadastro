@@ -1,0 +1,9 @@
+package br.com.app_cadastro.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableWebMVC
+public class WebConfiguration {
+
+}

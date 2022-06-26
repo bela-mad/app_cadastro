@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="app_cadastro" project="app_cadastro" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.app_cadastro.AppCadastroApplicationTests" time="0.219" displayname="AppCadastroApplicationTests" uniqueid="[engine:junit-jupiter]/[class:br.com.app_cadastro.AppCadastroApplicationTests]">
+    <testcase name="contextLoads" classname="br.com.app_cadastro.AppCadastroApplicationTests" time="0.219" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:br.com.app_cadastro.AppCadastroApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+  <testsuite name="br.com.app_cadastro.adapter.DozerConverterTest" time="0.072" displayname="DozerConverterTest" uniqueid="[engine:junit-jupiter]/[class:br.com.app_cadastro.adapter.DozerConverterTest]">
+    <testcase name="parseEntityToVOTest" classname="br.com.app_cadastro.adapter.DozerConverterTest" time="0.072" displayname="parseEntityToVOTest()" uniqueid="[engine:junit-jupiter]/[class:br.com.app_cadastro.adapter.DozerConverterTest]/[method:parseEntityToVOTest()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,19 @@
+package imabank;
+
+public class TestaBanco {
+	
+	public static void main(String[] args) {
+		
+		Pessoa pessoaNumero1 = new Pessoa(); //criar uma instancia = copia
+		pessoaNumero1.nome = "José das Couves";
+		pessoaNumero1.profissão = "Agricultor";
+		pessoaNumero1.cpf = "750.562.835-68";
+		
+		System.out.println("Nome: " + pessoaNumero1.nome);
+		System.out.println("Profissão: " + pessoaNumero1.profissão);
+		System.out.println("CPF: " + pessoaNumero1.cpf);
+		
+		
+		
+	}
+}

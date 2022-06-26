@@ -1,0 +1,97 @@
+package br.com.app_cadastro.domain.entity;
+
+import java.io.Serializable;
+import java.util.Collection;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="user")
+public class User implements UserDetails, Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private Long id;
+	
+	@Column(name="user_name", unique=true) //não permite repetiçao do valor do objeto
+	private String userName;
+	
+	@Column(name="full_name")
+	private String fullName;
+	
+	@Column(name="password")
+	private String password;
+	
+	@Column(name="account_non_expired")
+	private Boolean accountNonExpired;
+	
+	@Column(name="account_non_locked")
+	private Boolean accountNonLocked;	
+	
+	@Column(name="credential_non_expired")
+	private Boolean credentialNonExpired;
+	
+	@Column(name="enable")
+	private Boolean enable;
+	
+	
+	
+	
+	
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return null;
+	}
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

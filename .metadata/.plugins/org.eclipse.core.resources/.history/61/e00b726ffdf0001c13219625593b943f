@@ -1,0 +1,6 @@
+package br.com.app_cadastro.security.jwt;
+
+public class JwtConfigurer extends SecurityConfigurer{
+
+	
+}

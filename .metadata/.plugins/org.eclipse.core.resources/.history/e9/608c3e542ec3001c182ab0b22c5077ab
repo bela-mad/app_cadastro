@@ -1,0 +1,12 @@
+package imabank;
+
+public class Pessoa {
+	
+	String nome;
+	String cpf;
+	String rg;
+	String profissão;
+	String email;
+	String telefone;
+	
+}

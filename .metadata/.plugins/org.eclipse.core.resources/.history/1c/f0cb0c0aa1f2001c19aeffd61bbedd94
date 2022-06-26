@@ -1,0 +1,24 @@
+package br.com.app_cadastro.adapter;
+
+import br.com.app_cadastro.domain.entity.Pessoa;
+
+public class DozerConverterTest {
+
+	//MOCK = criar um objeto com a informação que vai ser testada
+	
+	private Pessoa mockEntity(Long numero) {
+		
+		Pessoa pessoa = new Pessoa();
+		pessoa.setId(0l);		
+		pessoa.setNome("Nome teste" + numero);
+		pessoa.setSobrenome("Sobrenome teste" + numero);
+		pessoa.setNomeSocial("NomeSocial teste" + numero);
+		pessoa.setEmail("Email teste" + numero);
+		
+		return null;
+	}
+	
+	
+	
+	
+}
