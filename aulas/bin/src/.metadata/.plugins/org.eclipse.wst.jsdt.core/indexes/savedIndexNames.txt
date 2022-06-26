@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\LENOVO\Desktop\serasa-git\aulas\src\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4259138808.index
+3278213340.index
+3071663698.index
+3349279961.index
+3498483268.index
+1477856380.index

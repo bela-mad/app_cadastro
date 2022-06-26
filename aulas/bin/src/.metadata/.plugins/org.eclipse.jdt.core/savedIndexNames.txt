@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\LENOVO\Desktop\serasa-git\aulas\src\.metadata\.plugins\org.eclipse.jdt.core
