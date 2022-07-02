@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.app_cadastro.domain.Pessoa;
+import br.com.app_cadastro.domain.entity.Pessoa;
 import br.com.app_cadastro.exception.ResourceNotFoundException;
 import br.com.app_cadastro.repository.PessoaRepository;
 
@@ -44,11 +44,5 @@ public class PessoaService {
 		entity.setEmail(pessoa.getEmail());
 		
 		return inserir(entity);		
-		
 	}
-	
-	
-	
-	
-	
 }
