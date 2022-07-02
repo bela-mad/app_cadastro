@@ -1,4 +1,4 @@
-package br.com.app_cadastro.domain;
+package br.com.app_cadastro.domain.entity;
 
 import java.io.Serializable;
 
